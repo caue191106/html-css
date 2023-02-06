@@ -11,12 +11,15 @@ body, html {
 }
 
 header {
+    padding-top: 15px;
+    padding-bottom: 10px;
     background-color: rgb(148, 148, 148);
 }
 
 header > h1 {
     padding: 10px;
     text-align: center;
+    text-shadow: 2px 2px 3px gray;
 }
 
 span#burguer  {
@@ -49,10 +52,13 @@ menu > ul > li > a {
     color: white;
     text-align: center;
     border-top: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgb(88, 88, 88);
 }
 
 menu > ul > li a:hover {
     background-color: rgb(110, 110, 110);
+    transition: background-color, 0.3s;
 }
 
 main {
